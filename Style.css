@@ -403,27 +403,30 @@ footer .arriba{
 
 /*Responsive*/
 
-@media screen and (max-width:980px){
-    nav{
+.nav-responsive {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-responsive {
+        display: block;
+    }
+    #nav {
         display: none;
     }
-    .nav-responsive{
-        display: block;
-    }
-    nav.responsive{
+    #nav.responsive {
         display: block;
         position: absolute;
-        right: 0;
-        top: 75px;
-        background-color: #460392;
-        width: 180px;
+        top: 60px;
+        width: 100%;
+        background-color: #5603b6;
     }
-    nav.responsive ul{
-        display: block !important;
+    #nav.responsive ul {
+        flex-direction: column;
+        align-items: center;
     }
-    nav.responsive ul li{
-        border-bottom: 1px solid #fff;
-        padding: 10px 0;
+    #nav.responsive ul li {
+        margin: 10px 0;
     }
 }
 
