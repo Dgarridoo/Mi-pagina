@@ -1,0 +1,445 @@
+/*Importacion de la fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Righteous';
+    margin: 0;
+    padding: 0;
+}
+
+/*Permite deslizar cuando haces clicks en los links del menu*/
+html, body{
+    scroll-behavior: smooth;
+}
+
+
+/*Menu*/
+.content-header{
+    background: #5603b6;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.content-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.content-header header .logo a{
+    font-family: 'Righteous', sans-serif;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.content-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.content-header header nav ul li a{
+    text-align: none;
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+    padding: 3px;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.content-header header nav li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.nav-responsive{
+    background-color: rgb(71, 0, 151);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*Inicio*/
+
+.Inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.Inicio .contenido-banner{
+    padding: 20px;
+    background-color: rgb(71, 0, 151);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.Inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 7px solid #fff;
+    display: block;
+    margin: auto;
+}
+
+.Inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+
+.Inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.Inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.Inicio .contenido-banner .redes a:hover{
+    background-color: #000000;
+}
+
+/*Sobre mi*/
+.sobremi{
+    background-color: #170031;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .contenido-seccion p span{
+    color: #8544cf;
+    font-weight: bold;
+}
+
+.sobremi .fila{
+    display: flex;
+}
+
+.sobremi .fila .col{
+    width: 50%;
+}
+
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul{
+    list-style: none;
+}
+
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #8544cf;
+    width: 130px;
+}
+
+.sobremi .fila .col ul li span{
+    background-color: #5603b6;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses{
+    width: 120px;
+    height: 120px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses:hover{
+    background-color: #5603b6;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.sobremi button{
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    z-index: 10;
+}
+
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #8544cf;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+
+/*Seccion Skills*/
+.skills{
+    background-color: #1c003b;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.skills h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills.fila{
+    display: flex;
+}
+
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.skills .skills > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: black;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progreso{
+    background-color: #8544cf;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #8544cf;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.skills .skill .javascript{
+    width: 0;
+    animation: 2s javascript forwards;
+}
+
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 10%;}
+}
+
+.skills .skill .bash{
+    width: 0;
+    animation: 2s bash forwards;
+}
+
+@keyframes bash {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+.skills .skill .htmlcss{
+    width: 0;
+    animation: 2s htmlcss forwards;
+}
+
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+
+/*Footer*/
+
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: 1s;
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #120025;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #460392;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+}
