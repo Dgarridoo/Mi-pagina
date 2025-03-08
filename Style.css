@@ -301,6 +301,7 @@ html, body{
     background-color: black;
     position: relative;
     margin-bottom: 30px;
+    margin-top: 15px;
 }
 
 .skills .skill .progreso{
@@ -309,6 +310,7 @@ html, body{
     top: 0;
     left: 0;
     height: 8px;
+  
 }
 
 .skills .skill .barra-skill span{
